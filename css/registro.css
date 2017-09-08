@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  /*font-family: 'ubuntu', sans-serif;*/
+}
+.contenedor {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding-top: 50px;
+  display: flex;
+  height: 700px;
+}
+/*------------------- FORMULARIO DE REGISTRO ------------*/
+.formulario {
+  width: 50%;
+  background-color: white;
+  padding-top: 20px;
+  border-radius: 4px;
+  height: 450px;
+}
+.formulario h1 {
+  text-align: center;
+  margin-top: 10px;
+}
+.registro {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.registro input, .registro div {
+  margin: 10px auto;
+}
+.registro .arriba {
+  display: flex;
+  justify-content: space-between;
+  width: 72%;
+}
+.registro .arriba input {
+  font-size: 18px;
+  width: 40%;
+  height: 30px;
+  border-radius: 4px;
+  padding: 5px;
+  border: 1px solid #dddfe2;
+}
+.registro input {
+  width: 64.8%;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid #dddfe2;
+}
+.registro .abajo {
+  display: flex;
+  justify-content: space-between;
+  width: 72%;
+}
+.registro .abajo input {
+  width: 40%;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  padding: 5px;
+  border: 1px solid #dddfe2;
+}
+div.aceptar {
+  margin: 20px 0;
+  display: flex;
+
+}
+.aceptar .izquierda {
+  display: flex;
+  align-items: flex-start;
+}
+.aceptar .izquierda input {
+  width: 13px;
+}
+.aceptar .izquierda label {
+  margin-top: 13px;
+  margin-left: 6px;
+}
+.aceptar .derecha {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+.aceptar .derecha input {
+  background-color: #5cb85c;
+  border: none;
+  color: white;
+  width: 127px;
+  height: 45px;
+}
+/*------------------- FIN FORMULARIO DE REGISTRO ------------*/
+
+/*---------------------- INGRESAR CON REDES SOCIALES ------------*/
+.ingresar {
+  background-color: white;
+  width: 27%;
+  height: 300px;
+  padding-top: 20px;
+  border-radius: 4px;
+}
+.ingresar h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.ingresar div {
+  width: 85%;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+.facebook {
+  background-color: #3b5998;
+}
+.facebook a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+  font-size: 18px;
+}
+.facebook i {
+  font-size: 20px;
+  margin-right: 27px;
+  color: white;
+}
+.gmail {
+  background-color: #df4a32;
+}
+.gmail a{
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  padding: 10px;
+  display: block;
+}
+.gmail i {
+  font-size: 18px;
+  margin-right: 16px;
+}
+.twitter {
+  background-color: #1da1f2;
+}
+.twitter a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  display: block;
+  font-size: 18px;
+}
+.twitter i {
+  font-size: 20px;
+  margin-right: 20px;
+  color: white;
+}
+/*-------------- NOTE: footer ------------*/
+}
+footer{
+   width: 100%;
+   overflow: hidden;
+}
+
+footer img{
+   float: left;
+   position: relative;
+   left: 30px;
+   top: 30px;
+   width: 80px;
+   height: 60px;
+}
+.pie{
+   background-color: rgb(34,54,63);
+   width: 100%;
+   height: 150px;
+   overflow: hidden;
+}
+
+div.pie ul{
+   float: left;
+   list-style: none;
+   position: relative;
+   top: 23px;
+}
+
+div.pie ul li a{
+   margin: 5px;
+   color: rgb(96, 96, 96);
+   text-decoration: none;
+   transition: 0.6s;
+}
+div.pie ul li a:hover{
+   color: #B9A88E;
+}
+
+div.redes-sociales{
+   float: right;
+   position: relative;
+   right: 60px;
+}
+
+div.redes-sociales a img{
+   width: 35px;
+   height: 35px;
+   margin: 3px;
+   float: right;
+   filter: grayscale(100%);
+}
+
+div.redes-sociales a img:hover{
+   filter: none;
+   transition: all 0.7s ease;
+}
+footer p{
+
+   text-align: center;
+   font-size: 15px;
+
+   color: rgb(96, 96, 96);
+   clear: left;
+   position: relative;
+   transform: translateY(45px);
+}
+/*------------ NOTE: Footer -----------*/

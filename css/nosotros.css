@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+  /*font-family: 'Ubuntu', serif;*/
+  margin: 0 auto;
+}
+
+body{
+  background-color: #f5f5f5;
+  color: #484848;
+}
+
+.margen-arriba{
+    height: 70px;
+}
+
+.contenedor-faqs{
+  width: 90%;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  /*padding: 20px;*/
+  font-family: 'Ubuntu', sans-serif;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  }
+
+  .contenedor-faqs h2{
+    margin-left: 20px;
+  }
+
+  .contenedor-faqs .img-nosotros{
+    background-image: url("../images/banner.jpg");
+    width: 100%;
+    height: 400px;
+
+  }
+
+.contenedor-faqs p{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/*-------------- NOTE: footer ------------*/
+}
+footer{
+   width: 100%;
+   overflow: hidden;
+}
+
+footer img{
+   float: left;
+   position: relative;
+   left: 30px;
+   top: 30px;
+   width: 80px;
+   height: 60px;
+}
+.pie{
+   background-color: rgb(34,54,63);
+   width: 100%;
+   height: 150px;
+   overflow: hidden;
+}
+
+div.pie ul{
+   float: left;
+   list-style: none;
+   position: relative;
+   top: 23px;
+}
+
+div.pie ul li a{
+   margin: 5px;
+   color: rgb(96, 96, 96);
+   text-decoration: none;
+   transition: 0.6s;
+}
+div.pie ul li a:hover{
+   color: #B9A88E;
+}
+
+div.redes-sociales{
+   float: right;
+   position: relative;
+   right: 60px;
+}
+
+div.redes-sociales a img{
+   width: 35px;
+   height: 35px;
+   margin: 3px;
+   float: right;
+   filter: grayscale(100%);
+}
+
+div.redes-sociales a img:hover{
+   filter: none;
+   transition: all 0.7s ease;
+}
+footer p{
+
+   text-align: center;
+   font-size: 15px;
+
+   color: rgb(96, 96, 96);
+   clear: left;
+   position: relative;
+   transform: translateY(45px);
+}
+/*------------ NOTE: Footer -----------*/

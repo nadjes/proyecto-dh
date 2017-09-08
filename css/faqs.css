@@ -1,0 +1,159 @@
+*{
+  box-sizing: border-box;
+  /*font-family: 'Ubuntu', serif;*/
+  margin: 0 auto;
+}
+
+body{
+  background-color: #f5f5f5;
+  color: #484848;
+}
+
+.margen-arriba{
+    height: 70px;
+}
+
+.contenedor-faqs{
+  width: 90%;
+  background-color: white;
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 25px;
+  }
+
+.pregunta{
+  text-transform: uppercase;
+  background-color: #CCBE99;
+  padding: 13px;
+  margin-bottom: 1px;
+  transition: background-color 0.5s ease;
+}
+
+.pregunta:hover{
+  background-color: #E4DACE;
+}
+.pregunta a{
+  text-decoration: none;
+  color: black;
+}
+input[type=checkbox]{
+    display: none;
+}
+input[type=checkbox]#comprar:checked ~ #como-comprar{
+  display: block;
+}
+input[type=checkbox]#preg-crear-cuenta:checked ~ #crear-cuenta{
+  display: block;
+}
+input[type=checkbox]#preg-pago:checked ~ #medios-de-pago{
+  display: block;
+}
+input[type=checkbox]#preg-fact-a:checked ~ #fact-a{
+  display: block;
+}
+input[type=checkbox]#preg-envios-desde:checked ~ #envios-desde{
+  display: block;
+}
+input[type=checkbox]#preg-chequear-pedido:checked ~ #chequear-pedido{
+  display: block;
+}
+input[type=checkbox]#preg-nadie-pedido:checked ~ #nadie-pedido{
+  display: block;
+}
+input[type=checkbox]#preg-recibe-otro:checked ~ #recibe-otro{
+  display: block;
+}
+input[type=checkbox]#preg-devoluciones:checked ~ #devoluciones{
+  display: block;
+}
+input[type=checkbox]#preg-mayorista:checked ~ #mayorista{
+  display: block;
+}
+input[type=checkbox]#preg-contacto:checked ~ #contacto{
+  display: block;
+}
+.respuesta{
+  padding-top: 10px;
+  display: none;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+}
+
+.volver-arriba{
+  text-decoration: none;
+  color: #484848;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/*-------------- NOTE: footer ------------*/
+}
+footer{
+   width: 100%;
+   overflow: hidden;
+}
+
+footer img{
+   float: left;
+   position: relative;
+   left: 30px;
+   top: 30px;
+   width: 80px;
+   height: 60px;
+}
+.pie{
+   background-color: rgb(34,54,63);
+   width: 100%;
+   height: 150px;
+   overflow: hidden;
+}
+
+div.pie ul{
+   float: left;
+   list-style: none;
+   position: relative;
+   top: 23px;
+}
+
+div.pie ul li a{
+   margin: 5px;
+   color: rgb(96, 96, 96);
+   text-decoration: none;
+   transition: 0.6s;
+}
+div.pie ul li a:hover{
+   color: #B9A88E;
+}
+
+div.redes-sociales{
+   float: right;
+   position: relative;
+   right: 60px;
+}
+
+div.redes-sociales a img{
+   width: 35px;
+   height: 35px;
+   margin: 3px;
+   float: right;
+   filter: grayscale(100%);
+}
+
+div.redes-sociales a img:hover{
+   filter: none;
+   transition: all 0.7s ease;
+}
+footer p{
+
+   text-align: center;
+   font-size: 15px;
+
+   color: rgb(96, 96, 96);
+   clear: left;
+   position: relative;
+   transform: translateY(45px);
+}
+/*------------ NOTE: Footer -----------*/
