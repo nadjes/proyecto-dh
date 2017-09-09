@@ -12,70 +12,69 @@
 
    </head>
    <body>
-   <!-- (((((((((((((Header))))))))))) -->
-    
-         <header>
-                 <div class="izquierda">
-                   <div class="img-logo">
-                     <img src="images/hs-logo.png" alt="">
+     <!--................... Header............................ -->
+     <header>
+       <div class="izquierda">
+         <div class="img-logo">
+           <img src="images/hs-logo.png" alt="">
+         </div>
+         <form class="buscador" action="index.html" method="post">
+           <input type="text" name="" value="" placeholder="Estoy buscando...">
+           <button type="submit" name="button">
+             <i class="fa fa-search" aria-hidden="true"></i>
+           </button>
+         </form>
+       </div>
+       <div class="derecha">
+         <input type="checkbox" id="menu">
+         <label for="menu" class="menu">
+           <i class="fa fa-bars" aria-hidden="true"></i>
+         </label>
+         <nav>
+           <ul>
+             <li class="movil">
+               <form class="buscador-movil" action="index.html" method="post">
+                 <input type="text" name="" value="" placeholder="Estoy buscando...">
+                 <button type="submit" name="button">
+                   <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                 </button>
+               </form>
+             </li>
+             <li>
+               <a href="index.html">Home</a>
+             </li>
+             <li>
+               <a href="registro.html">Registrarse</a>
+             </li>
+             <li>
+               <a href="ingresar.html" id="hover">Ingresar</a>
+               <div class="ingreso">
+                 <form class="" action="index.html" method="post">
+                   <div class="ingreso-arriba-arriba">
+                     <label for="usuario">Usuario</label>
+                     <input type="email" name="" value="" id="usuario" placeholder="E-mail">
+                     <label for="pass">Contraseña</label>
+                     <input type="password" name="" value="" id="pass" placeholder="Contraseña">
                    </div>
-                   <form class="buscador" action="index.html" method="post">
-                     <input type="text" name="" value="" placeholder="Estoy buscando...">
-                     <button type="submit" name="button">
-                       <i class="fa fa-search" aria-hidden="true"></i>
-                     </button>
-                   </form>
-                 </div>
-                 <div class="derecha">
-                   <input type="checkbox" id="menu">
-                   <label for="menu" class="menu">
-                     <i class="fa fa-bars" aria-hidden="true"></i>
-                   </label>
-                   <nav>
-                     <ul>
-                       <li class="movil">
-                         <form class="buscador-movil" action="index.html" method="post">
-                           <input type="text" name="" value="" placeholder="Estoy buscando...">
-                           <button type="submit" name="button">
-                             <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                           </button>
-                         </form>
-                       </li>
-                       <li>
-                         <a href="#">Home</a>
-                       </li>
-                       <li>
-                         <a href="registro.html">Registrarse</a>
-                       </li>
-                       <li>
-                         <a href="ingresar.html" id="hover">Ingresar</a>
-                         <div class="ingreso">
-                           <form class="" action="index.html" method="post">
-                             <div class="ingreso-arriba-arriba">
-                               <label for="usuario">Usuario</label>
-                               <input type="email" name="" value="" id="usuario" placeholder="E-mail">
-                               <label for="pass">Contraseña</label>
-                               <input type="password" name="" value="" id="pass" placeholder="Contraseña">
-                             </div>
-                          <div class="ingreso-arriba">
-                              <input type="checkbox" name="" value="" id="recordarme">
-                              <label for="recordarme">Recordame</label>
-                          </div>
-                          <div class="ingreso-abajo">
-                              <input type="submit" name="" value="Iniciar sesión">
-                               <a href="#">Olvide mi contraseña</a>
-                          </div>
-                        </form>
-                        </div>
-                       </li>
-                       <li>
-                         <a href="faqs.html">FAQ</a>
-                       </li>
-                     </ul>
-                   </nav>
-                 </div>
-
-           </header>
+                <div class="ingreso-arriba">
+                    <input type="checkbox" name="" value="" id="recordarme">
+                    <label for="recordarme">Recordame</label>
+                </div>
+                <div class="ingreso-abajo">
+                    <input type="submit" name="" value="Iniciar sesión">
+                     <a href="#">Olvide mi contraseña</a>
+                </div>
+              </form>
+              </div>
+             </li>
+             <li>
+               <a href="faqs.html">FAQ</a>
+             </li>
+           </ul>
+         </nav>
+       </div>
+       </header>
+       <!-- ................fin Header.................. -->
     <!-- NOTE: cuerpo -->
       <div class="container">
             <div class="banner">
@@ -162,7 +161,7 @@
                 </ul>
                 <ul class="listas">
                    <li><a href="#">Terminos y condiciones</a></li>
-                   <li><a href="#">Nosotros</a></li>
+                   <li><a href="nosotros.html">Nosotros</a></li>
                    <li><a href="#">FAQ</a></li>
                    <li><a href="#">Formas de pago</a></li>
                 </ul>
