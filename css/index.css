@@ -36,14 +36,18 @@
   left: 25%;
   top: 76%;
   border: 2px solid
-
 }
+
 .banner img{
   position: relative;
   bottom: 30px;
   right: 47%;
   width: 50%;
   z-index: 2;
+}
+
+.banner-cel{
+  display: none;
 }
 
 .secciones{
@@ -248,7 +252,7 @@ footer p{
 /* NOTE: Responsive Tablets */
 
 @media (max-width:960px) and (min-width:461px){
-   
+
    /* NOTE: body */
    div.banner{
       display: none;
@@ -319,7 +323,30 @@ footer p{
 
    div section.categorias{
       display: none;
+   }
 
+   div.banner-cel{
+     display: block;
+     width: 100%;
+     background-image: url("../images/banner.jpg");
+     height: 400px;
+   }
+   div.banner-cel img{
+     width: 15%;
+     position: relative;
+     left: 4%;
+     top: 302px;
+   }
+   div.banner-cel p{
+     text-align: center;
+     font-size: 37px;
+     color: white;
+     font-family: 'EB Garamond', serif;
+     position: relative;
+     left: 50%;
+     transform: translateX(-50%);
+     top: 222px;
+     border: 2px solid
    }
 
    div.secciones section.ofertas{
@@ -386,4 +413,5 @@ footer p{
       box-shadow: 0px -3px 25px #888888;
       overflow: hidden;
     }
+
 }/* fin mobile*/
