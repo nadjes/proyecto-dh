@@ -136,3 +136,13 @@ footer p{
    transform: translateY(45px);
 }
 /*------------ NOTE: Footer -----------*/
+
+
+@media (max-width:460px){
+   .formulario{
+      width: 95%;
+   }
+   .container{
+      height: 500px;
+   }
+}

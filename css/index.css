@@ -149,32 +149,35 @@
 
 /*--------- NOTE: medios-pagos -------*/
 
-section.medios-pagos{
-   margin-top: 150px;
-   width: 100vw;
-   height: 120px;
-   box-shadow: 0px -3px 25px #888888;
-   overflow: hidden;
-}
-
 div.img-pagos{
-   width: 100%;
-   height: 85px;
    position: relative;
-   right: 60px;
-
+   right: 116px;
+   top: 5px;
 }
-.medios-pagos img{
-   float: left;
-   width: 80px;
-   height: 75px;
-   position: relative;
-   left: 45%;
-   transform: translate(-45%);
-   margin-top: 18px;
-   filter: grayscale(100%);
-   transition: 0.6s;
-   margin-right: 10px;
+div.redes-sociales {
+  float: right;
+  position: relative;
+  right: 166px;
+  bottom: 26px;
+}
+.medios-pagos img {
+  width: 60px;
+  height: 52px;
+  position: relative;
+  left: 50%;
+  margin-top: 18px;
+  filter: grayscale(50%);
+  margin-right: 10px;
+}
+section.medios-pagos {
+  margin-top: 25px;
+  width: 100vw;
+  height: 95px;
+  box-shadow: 0px -3px 25px #888888;
+  overflow: hidden;
+}
+.medios-pagos #mercadopago{
+  width: 100px;
 }
 
 /*--- NOTE: fin medios de pago -------------*/
@@ -253,37 +256,86 @@ footer p{
 
 @media (max-width:960px) and (min-width:461px){
 
+
    /* NOTE: body */
+   div.banner-cel{
+     display: block;
+     width: 100%;
+     background-image: url("../images/banner.jpg");
+     height: 400px;
+     background-size: 100% 80%;
+     background-repeat: no-repeat;
+     background-position-y: 45px;
+   }
+   div.banner-cel img{
+      display: none;
+   }
    div.banner{
       display: none;
    }
    .secciones .categorias{
       display: none;
    }
-
-   .secciones .ofertas .prod-oferta {
-    float: left;
-    width: 30%;
-    position: relative;
-    margin: 1.66%;
+   div.secciones{
+      margin-top: -105px;
    }
+   .secciones .ofertas .prod-oferta {
+      float: left;
+      width: 30%;
+      position: relative;
+      margin: 1.66%;
 
+   }
+   .secciones .ofertas .prod-oferta p{
+      display: none;
+   }
+   .secciones .ofertas .prod-oferta button {
+      left: 50%;
+      transform: translateX(0%);
+      border: 1px solid;
+      border-radius: 9px;
+      padding: 2px;
+      font-size: 18px;
+      width: 70%;
+    }
    div.secciones section.ofertas{
       width: 100%;
       height: 100%;
       margin-top: 70px;
    }
-   section.medios-pagos{
-      margin-top: 35px;
-   }
+
 
    /* NOTE: medios de pagos tablet */
-   div.img-pagos {
-    width: 100%;
-    height: 85px;
-    position: relative;
-    right: 24%;
-}
+   div.img-pagos{
+      position: relative;
+      right: 160px;
+      top: 5px;
+   }
+   div.redes-sociales {
+     float: right;
+     position: relative;
+     right: 166px;
+     bottom: 26px;
+   }
+   .medios-pagos img {
+     width: 60px;
+     height: 52px;
+     position: relative;
+     left: 50%;
+     margin-top: 18px;
+     filter: grayscale(50%);
+     margin-right: 10px;
+   }
+   section.medios-pagos {
+     margin-top: 25px;
+     width: 100vw;
+     height: 95px;
+     box-shadow: 0px -3px 25px #888888;
+     overflow: hidden;
+   }
+   .medios-pagos #mercadopago{
+     width: 100px;
+  }
    /* NOTE: Footer tablet */
    footer img.data-fiscal {
       position: relative;
@@ -330,6 +382,9 @@ footer p{
      width: 100%;
      background-image: url("../images/banner.jpg");
      height: 400px;
+     background-size: 100% 80%;
+     background-repeat: no-repeat;
+     background-position-y: 45px;
    }
    div.banner-cel img{
      width: 15%;
@@ -338,6 +393,7 @@ footer p{
      top: 302px;
    }
    div.banner-cel p{
+     display: none;
      text-align: center;
      font-size: 37px;
      color: white;
@@ -348,7 +404,9 @@ footer p{
      top: 222px;
      border: 2px solid
    }
-
+   div.secciones{
+      margin-top: -105px;
+   }
    div.secciones section.ofertas{
       width: 100%;
       height: 100%;
@@ -361,15 +419,54 @@ footer p{
       width: 100%;
       position: relative;
       margin: 1.66%;
-      clear: both;
+      overflow: hidden;
    }
+   .secciones .ofertas .prod-oferta p{
+      display: none;
+   }
+   .secciones .ofertas .prod-oferta img{
+      margin-bottom: 20px;
+   }
+   .secciones .ofertas .prod-oferta button {
+    left: 50%;
+    transform: translateX(0%);
+    border: 1px solid;
+    border-radius: 9px;
+    padding: 10px;
+    font-size: 18px;
+    }
 
    /* NOTE: Medios de Pagos mobile*/
    div.img-pagos{
       position: relative;
-      right: 116px;
+      right: 160px;
       top: 5px;
    }
+   div.redes-sociales {
+     float: right;
+     position: relative;
+     right: 166px;
+     bottom: 26px;
+   }
+   .medios-pagos img {
+     width: 60px;
+     height: 52px;
+     position: relative;
+     left: 50%;
+     margin-top: 18px;
+     filter: grayscale(50%);
+     margin-right: 10px;
+   }
+   section.medios-pagos {
+     margin-top: 25px;
+     width: 100vw;
+     height: 95px;
+     box-shadow: 0px -3px 25px #888888;
+     overflow: hidden;
+   }
+   .medios-pagos #mercadopago{
+     width: 100px;
+  }
 
    /* NOTE: Footer mobile*/
    footer .pie p{
@@ -390,28 +487,9 @@ footer p{
       top: 5px;
       right: 20px;
     }
-    div.redes-sociales {
-      float: right;
-      position: relative;
-      right: 166px;
-      bottom: 26px;
-    }
-    .medios-pagos img {
-      width: 76px;
-      height: 65px;
-      position: relative;
-      left: 45%;
-      transform: translate(-45%);
-      margin-top: 18px;
-      filter: grayscale(50%);
-      margin-right: 10px;
-    }
-    section.medios-pagos {
-      margin-top: 25px;
-      width: 100vw;
-      height: 120px;
-      box-shadow: 0px -3px 25px #888888;
-      overflow: hidden;
-    }
+    div.pie ul.der{
+
+   }
+
 
 }/* fin mobile*/
