@@ -1,255 +1,266 @@
-* {
-  box-sizing: border-box;
-  /*font-family: 'News Cycle', sans-serif;*/
-  /*font-family: 'ubuntu', serif;*/
-  margin: 0 auto;
-}
 
-.contenedor{
-  width: 100%;
-  background-color: #CSC1C0;
-  position: relative;
+  * {
+    box-sizing: border-box;
+    /*font-family: 'News Cycle', sans-serif;*/
+    /*font-family: 'ubuntu', serif;*/
+    margin: 0 auto;
+    }
 
-}
+    .contenedor{
+       width: 100%;
+       background-color: #CSC1C0;
+       position: relative;
 
-.banner{
-  width: 100%;
-  height: auto;
-  max-height: 95vh;
-  overflow: hidden;
-  position: relative;
-}
+     }
 
-.banner video{
-   width: 100vw;
-   position: relative;
-   z-index: 0;
-   /*margin-bottom: 50px;*/
+   .banner{
+     width: 100%;
+     height: auto;
+     max-height: 95vh;
+     overflow: hidden;
+     position: relative;
+   }
 
-}
+   .banner video{
+      width: 100vw;
+      position: relative;
+      z-index: 0;
+      /*margin-bottom: 50px;*/
 
-.banner p{
-  font-size: 55px;
-  color: white;
-  font-family: 'EB Garamond', serif;
-  position: absolute;
-  left: 25%;
-  top: 76%;
-  border: 2px solid
-}
+   }
 
-.banner img{
-  position: relative;
-  bottom: 30px;
-  right: 47%;
-  width: 50%;
-  z-index: 2;
-}
+   .banner p{
+     font-size: 55px;
+     color: white;
+     font-family: 'EB Garamond', serif;
+     position: absolute;
+     left: 25%;
+     top: 76%;
+     border: 2px solid
+   }
 
-.banner-cel{
-  display: none;
-}
+   .banner img{
+     position: relative;
+     bottom: 30px;
+     right: 47%;
+     width: 50%;
+     z-index: 2;
+   }
 
-.secciones{
-  overflow: hidden;
-}
-.secciones section{
-  float: left;
-}
-.secciones .categorias{
-  width: 15%;
-  background: linear-gradient(#B9A88E, white 98%);
-  color: #121D33;
-  height: 900px;
-}
-.secciones .categorias h2{
-  margin-left: 8%;
-  font-size: 14px;
-  padding-top: 40px;
-  transition: 0.3s;
+   .banner-cel{
+     display: none;
+   }
 
-}
-.secciones .categorias h3{
-  margin-left: 8%;
-  font-size: 18px;
-}
+   .secciones{
+     overflow: hidden;
+   }
+   .secciones section{
+     float: left;
+   }
+   .secciones .categorias{
+        width: 15%;
+     background: -webkit-linear-gradient(#B9A88E, white 98%);
+     background: -o-linear-gradient(#B9A88E, white 98%);
+     background: linear-gradient(#B9A88E, white 98%);
+     color: #121D33;
+     height: 900px;
+   }
+   .secciones .categorias h2{
+     margin-left: 8%;
+     font-size: 14px;
+     padding-top: 40px;
+     transition: 0.3s;
 
-.secciones .categorias h2:hover{
-   color: #B9A88E;
-}
+   }
+   .secciones .categorias h3{
+     margin-left: 8%;
+     font-size: 18px;
+   }
 
-.secciones .categorias ul li{
-  font-size: 20px;
-  list-style: none;
-  transition: 0.3s;
-  padding-bottom: 15px;
-  padding-top: 10px;
-}
+   .secciones .categorias h2:hover{
+      color: #B9A88E;
+   }
 
-.secciones .categorias ul li:hover{
-   position: relative;
-   color: black;
-}
+   .secciones .categorias ul li{
+     font-size: 20px;
+     list-style: none;
+     transition: 0.3s;
+     padding-bottom: 15px;
+     padding-top: 10px;
+   }
 
-.secciones .ofertas{
-  width: 85%;
-  background: linear-gradient(#F8F8F8, white);
-  overflow: hidden;
-  text-align: center;
-  color: #121D33;
-  height: 900px;
+   .secciones .categorias ul li:hover{
+      position: relative;
+      color: black;
+   }
 
-}
-.secciones .ofertas .prod-oferta{
-  float: left;
-  width: 20%;
-  position: relative;
-  margin: 1.66%;
-}
-.secciones .ofertas .prod-oferta p{
-  margin-top: 0px;
-}
-.secciones .ofertas .prod-oferta img{
-  width: 100%;
-  border-radius: 20%;
-  transition: 0.5s;
-}
+   .secciones .ofertas{
+        width: 85%;
+     background: -webkit-linear-gradient(#F8F8F8, white);
+     background: -o-linear-gradient(#F8F8F8, white);
+     background: linear-gradient(#F8F8F8, white);
+     overflow: hidden;
+     text-align: center;
+     color: #121D33;
+     height: 900px;
 
-.secciones .ofertas .prod-oferta img:hover{
-   transform: scale(1.2,1.2);
+   }
+   .secciones .ofertas .prod-oferta{
+     float: left;
+     width: 20%;
+     position: relative;
+     margin: 1.66%;
+   }
+   .secciones .ofertas .prod-oferta p{
+     margin-top: 0px;
+   }
+   .secciones .ofertas .prod-oferta img{
+     width: 100%;
+     border-radius: 20%;
+     transition: 0.5s;
+   }
 
-
-}
-.secciones .ofertas .prod-oferta button{
-  width: 40%;
-  left: 50%;
-  transform: translateX(50%);
-}
-.secciones .mas-vendidos{
-  width: 20%;
-  background-color: #B9A88E;
-  height: 800px;
-  color: #121D33;
-}
-.secciones  h2{
-  margin-left: 8%;
-  font-size: 31px;
-    margin-left: -20px;
-}
+   .secciones .ofertas .prod-oferta img:hover{
+      transform: scale(1.03,1.03);
 
 
-}
-.secciones .art-mas-vendido{
-  width: 84%;
-  margin-left: 8%;
-}
-.secciones .art-mas-vendido img{
-  width: 100%;
-}
+   }
+   .secciones .ofertas .prod-oferta button{
+     width: 40%;
+     left: 50%;
+     transform: translateX(50%);
+   }
+   .secciones .mas-vendidos{
+     width: 20%;
+     background-color: #B9A88E;
+     height: 800px;
+     color: #121D33;
+   }
+   .secciones  h2{
+     margin-left: 8%;
+     font-size: 31px;
+     margin-left: -20px;
+   }
+
+
+   .secciones .art-mas-vendido{
+     width: 84%;
+     margin-left: 8%;
+   }
+   .secciones .art-mas-vendido img{
+     width: 100%;
+   }
 
 /*--------- NOTE: medios-pagos -------*/
 
-div.img-pagos{
-   position: relative;
-   right: 116px;
-   top: 5px;
-}
-div.redes-sociales {
-  float: right;
-  position: relative;
-  right: 166px;
-  bottom: 26px;
-}
-.medios-pagos img {
-  width: 60px;
-  height: 52px;
-  position: relative;
-  left: 50%;
-  margin-top: 18px;
-  filter: grayscale(50%);
-  margin-right: 10px;
-}
-section.medios-pagos {
-  margin-top: 25px;
-  width: 100vw;
-  height: 95px;
-  box-shadow: 0px -3px 25px #888888;
-  overflow: hidden;
-}
-.medios-pagos #mercadopago{
-  width: 100px;
-}
+   div.img-pagos{
+      position: relative;
+      right: 116px;
+      top: 5px;
+   }
+   div.redes-sociales {
+     float: right;
+     position: relative;
+     right: 2%;
+     bottom: 26px;
+     top: 1%;
+   }
+   .medios-pagos img {
+     width: 60px;
+     height: 52px;
+     position: relative;
+     left: 50%;
+     margin-top: 18px;
+     filter: grayscale(50%);
+     margin-right: 10px;
+   }
+   section.medios-pagos {
+     margin-top: 25px;
+     width: 100vw;
+     height: 95px;
+     box-shadow: 0px -3px 25px #888888;
+     overflow: hidden;
+   }
+   .medios-pagos #mercadopago{
+     width: 100px;
+   }
 
 /*--- NOTE: fin medios de pago -------------*/
 
 
 /*-------------- NOTE: footer ------------*/
-}
-footer{
-   width: 100%;
-   overflow: hidden;
-}
 
-footer img{
-   float: left;
-   position: relative;
-   left: 30px;
-   top: 30px;
-   width: 80px;
-   height: 60px;
-}
-.pie{
-   background-color: rgb(34,54,63);
-   width: 100%;
-   height: 150px;
-   overflow: hidden;
-}
 
-div.pie ul{
-   float: left;
-   list-style: none;
-   position: relative;
-   top: 23px;
-}
 
-div.pie ul li a{
-   margin: 5px;
-   color: rgb(96, 96, 96);
-   text-decoration: none;
-   transition: 0.6s;
-}
-div.pie ul li a:hover{
-   color: #B9A88E;
-}
+   footer{
+      width: 100%;
+      overflow: hidden;
+      background-color: #484848;
+   }
 
-div.redes-sociales{
-   float: right;
-   position: relative;
-   right: 60px;
-}
+   footer img{
+      float: left;
+      position: relative;
+      left: 2%;
+      top: 25px;
+      width: 81px;
+   }
+   .pie{
+      width: 100%;
+      height: 150px;
+      background-color: #484848;
+      overflow: hidden;
+   }
 
-div.redes-sociales a img{
-   width: 35px;
-   height: 35px;
-   margin: 3px;
-   float: right;
-   filter: grayscale(100%);
-}
 
-div.redes-sociales a img:hover{
-   filter: none;
-   transition: all 0.7s ease;
-}
-footer p{
+   div.pie ul{
+      float: left;
+      list-style: none;
+      position: relative;
+      top: 31px;
+      margin-left: 4%;
+   }
 
-   text-align: center;
-   font-size: 15px;
+   div.pie ul li a{
+      margin: 5px;
+      /*color: #B9A88E;*/
+      color: rgb(147, 147, 147);
+      text-decoration: none;
+      transition: 0.6s;
+      font-size: 15px;
+   }
+   div.pie ul li a:hover{
+      color: #B9A88E;
+      /*color: rgb(147, 147, 147);*/
+   }
 
-   color: rgb(96, 96, 96);
-   clear: left;
-   position: relative;
-   transform: translateY(45px);
-}
+   div.redes-sociales{
+      float: right;
+      position: relative;
+      right: 2%;
+   }
+
+   div.redes-sociales a img{
+      width: 35px;
+      height: 35px;
+      margin: 3px;
+      float: right;
+      filter: grayscale(100%);
+   }
+
+   div.redes-sociales a img:hover{
+      filter: none;
+      transition: all 0.7s ease;
+   }
+   footer p{
+      background-color: #484848;
+      text-align: center;
+      font-size: 15px;
+      color: rgb(147, 147, 147);
+      position: relative;
+      bottom: 20px;
+   }
+
 /*------------ : Footer -----------*/
 
 /* NOTE: Responsive Tablets */
@@ -407,6 +418,7 @@ footer p{
    }
    div.secciones{
       margin-top: -105px;
+      overflow: hidden;
    }
    div.secciones section.ofertas{
       width: 100%;
@@ -470,27 +482,18 @@ footer p{
   }
 
    /* NOTE: Footer mobile*/
-   footer .pie p{
-      left: 18%;
+
+   footer p{
+      bottom: 2px;
    }
-   footer img.data-fiscal{
-      float: left;
-      position: relative;
-      left: 5px;
+   footer img{
+      top: 10px;
+   }
+   div.pie ul{
+      padding: 3px;
+      margin-left: 3px;
       top: 5px;
-      width: 80px;
-      height: 60px;
-    }
-    div.pie ul {
-      float: left;
-      list-style: none;
-      position: relative;
-      top: 5px;
-      right: 20px;
-    }
-    div.pie ul.der{
 
    }
-
 
 }/* fin mobile*/
