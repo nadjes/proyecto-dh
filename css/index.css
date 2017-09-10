@@ -391,6 +391,7 @@ footer p{
      position: relative;
      left: 4%;
      top: 302px;
+     display: none;
    }
    div.banner-cel p{
      display: none;
