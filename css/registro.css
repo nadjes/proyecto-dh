@@ -76,6 +76,7 @@ div.aceptar {
 }
 .aceptar .izquierda input {
   width: 13px;
+  margin-right: 20px;
 }
 .aceptar .izquierda label {
   margin-top: 13px;
