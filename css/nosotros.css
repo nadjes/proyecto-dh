@@ -116,10 +116,63 @@ footer p{
 /*------------ NOTE: Footer -----------*/
 
 
+@media (max-width:960px) and (min-width:461px){
 
+   div.redes-sociales{
+      display: none;
+   }
+}
 
 @media (max-width: 460px){
    div.img-nosotros{
       background-size: 100% 70%;
+   }
+
+   /* NOTE: Medios de Pagos mobile*/
+   div.img-pagos{
+      position: relative;
+      right: 160px;
+      top: 5px;
+   }
+   div.redes-sociales {
+     float: right;
+     position: relative;
+     right: 166px;
+     bottom: 26px;
+     display: none;
+   }
+   .medios-pagos img {
+     width: 60px;
+     height: 52px;
+     position: relative;
+     left: 50%;
+     margin-top: 18px;
+     filter: grayscale(50%);
+     margin-right: 10px;
+   }
+   section.medios-pagos {
+     margin-top: 25px;
+     width: 100vw;
+     height: 95px;
+     box-shadow: 0px -3px 25px #888888;
+     overflow: hidden;
+   }
+   .medios-pagos #mercadopago{
+     width: 100px;
+  }
+
+   /* NOTE: Footer mobile*/
+
+   footer p{
+      bottom: 2px;
+   }
+   footer img{
+      top: 10px;
+   }
+   div.pie ul{
+      padding: 3px;
+      margin-left: 3px;
+      top: 5px;
+
    }
 }

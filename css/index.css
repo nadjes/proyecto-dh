@@ -332,6 +332,7 @@
      position: relative;
      right: 166px;
      bottom: 26px;
+     display: none;
    }
    .medios-pagos img {
      width: 60px;
