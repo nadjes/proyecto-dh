@@ -234,6 +234,7 @@ footer p{
 
    .contenedor{
      display: block;
+     height: auto;
    }
    /* NOTE: body tablet */
    .formulario {
@@ -291,9 +292,7 @@ footer p{
   }
 
    /* NOTE: footer */
-   .pie{
-     margin-top: 100px;
-   }
+
 }
 
 /* NOTE: responsive mobile */
@@ -324,9 +323,5 @@ footer p{
       bottom: 20px;
    }
 
-
-   .pie{
-      margin-top: 100px;
-   }
 
 }

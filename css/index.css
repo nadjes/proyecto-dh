@@ -102,7 +102,7 @@
      overflow: hidden;
      text-align: center;
      color: #121D33;
-     height: 900px;
+     height: 1100px;
 
    }
    .secciones .ofertas .prod-oferta{
@@ -125,11 +125,16 @@
 
 
    }
-   .secciones .ofertas .prod-oferta button{
-     width: 40%;
-     left: 50%;
-     transform: translateX(50%);
-   }
+   .secciones .ofertas .prod-oferta button {
+    left: 50%;
+    transform: translateX(0%);
+    border: 1px solid;
+    border-radius: 9px;
+    padding: 5px;
+    font-size: 15px;
+    background-color: #B9A88E;
+    }
+
    .secciones .mas-vendidos{
      width: 20%;
      background-color: #B9A88E;
@@ -185,7 +190,7 @@
      width: 100px;
    }
 
-/*--- NOTE: fin medios de pago -------------*/
+
 
 
 /*-------------- NOTE: footer ------------*/
@@ -495,5 +500,6 @@
       top: 5px;
 
    }
+   
 
 }/* fin mobile*/
