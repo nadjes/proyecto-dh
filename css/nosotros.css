@@ -28,13 +28,22 @@ body{
     margin-left: 20px;
   }
 
+  .margen-arriba-2 {
+    height: 200px;
+    background-attachment: fixed;
+    background-position: bottom;
+  }
+
   .contenedor-faqs .img-nosotros{
-    background-image: url("../images/banner.jpg");
+    background:url("../images/banner2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     width: 100%;
-    height: 400px;
-    background-size: 100% 120%;
-    background-repeat: no-repeat;
-    background-position-y:45px;
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
 
   }
 

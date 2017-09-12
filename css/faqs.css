@@ -42,44 +42,58 @@ input[type=checkbox]{
     display: none;
 }
 input[type=checkbox]#comprar:checked ~ #como-comprar{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-crear-cuenta:checked ~ #crear-cuenta{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-pago:checked ~ #medios-de-pago{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-fact-a:checked ~ #fact-a{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-envios-desde:checked ~ #envios-desde{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-chequear-pedido:checked ~ #chequear-pedido{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-nadie-pedido:checked ~ #nadie-pedido{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-recibe-otro:checked ~ #recibe-otro{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-devoluciones:checked ~ #devoluciones{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-mayorista:checked ~ #mayorista{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 input[type=checkbox]#preg-contacto:checked ~ #contacto{
-  display: block;
+  height: 120px;
+  padding-bottom: 15px;
 }
 .respuesta{
+  height: 0px;
   padding-top: 10px;
-  display: none;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
+  overflow: hidden;
+  transition: 1s;
+
 }
 
 .volver-arriba{
