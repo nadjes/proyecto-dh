@@ -1,79 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/faqs.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|News+Cycle" rel="stylesheet">
-    <script src="https://use.fontawesome.com/bb1fbcebba.js"></script>
-    <title>Preguntas frecuentes</title>
-  </head>
+<head>
+   <meta charset="utf-8">
+   <title>DH - Proyecto</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/footer.css">
+   <link rel="stylesheet" href="css/faqs.css">
+   <link href="https://fonts.googleapis.com/css?family=EB+Garamond|News+Cycle" rel="stylesheet">
+   <title>Sale de invierno</title>
+   <script src="https://use.fontawesome.com/bb1fbcebba.js"></script>
+
+</head>
   <body>
     <!--................... Header............................ -->
-  <header>
-    <div class="izquierda">
-      <div class="img-logo">
-       <a href="index.html"><img src="images/hs-logo.png" alt=""></a>
-      </div>
-      <form class="buscador" action="index.html" method="post">
-        <input type="text" name="" value="" placeholder="Estoy buscando...">
-        <button type="submit" name="button">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </form>
-    </div>
-    <div class="derecha">
-      <input type="checkbox" id="menu">
-      <label for="menu" class="menu">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-      </label>
-      <nav>
-        <ul>
-          <li class="movil">
-            <form class="buscador-movil" action="index.html" method="post">
-              <input type="text" name="" value="" placeholder="Estoy buscando...">
-              <button type="submit" name="button">
-                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-              </button>
-            </form>
-          </li>
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="registro.html">Registrarse</a>
-          </li>
-          <li>
-            <a href="ingresar.html" id="hover">Ingresar</a>
-            <div class="ingreso">
-              <form class="" action="index.html" method="post">
-                <div class="ingreso-arriba-arriba">
-                  <label for="usuario">Usuario</label>
-                  <input type="email" name="" value="" id="usuario" placeholder="E-mail">
-                  <label for="pass">Contraseña</label>
-                  <input type="password" name="" value="" id="pass" placeholder="Contraseña">
-                </div>
-              <div class="ingreso-arriba">
-                 <input type="checkbox" name="" value="" id="recordarme">
-                 <label for="recordarme">Recordame</label>
-             </div>
-             <div class="ingreso-abajo">
-                 <input type="submit" name="" value="Iniciar sesión">
-                  <a href="#">Olvide mi contraseña</a>
-             </div>
-           </form>
-           </div>
-          </li>
-          <li>
-            <a href="faqs.html">FAQ</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    </header>
-      <!-- ................fin Header.................. -->
+    <?php include('header.php') ?>
+        <!-- ................fin Header.................. -->
     <div class="margen-arriba">
     </div>
     <div class="contenedor-faqs">
@@ -154,38 +97,7 @@
     </div>
 
         </div>
-        <footer class="">
-            <div class="pie">
-               <img src="images/data-fiscal.jpg" alt="">
 
-               <div class="menu-footer">
-
-                  <ul>
-                 <li><a href="#">Primavera-Verano</a></li>
-                 <li><a href="#">Otoño-Invierno</a></li>
-                 <li><a href="#">Hombre</a></li>
-                 <li><a href="#">Mujer</a></li>
-               </ul>
-               <ul class="segundaLista">
-                 <li><a href="#">Terminos y condiciones</a></li>
-                 <li><a href="#">Formas de pago</a></li>
-                 <li><a href="nosotros.html">Nosotros</a></li>
-                 <li><a href="#">FAQ</a></li>
-
-               </ul>
-
-               </div>
-
-               <div class="redes-sociales">
-                 <a href="http://www.facebook.com" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-                 <a href="http://www.instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram"></a>
-                 <a href="http://www.twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
-                 <a href="http://www.pinterest.com" target="_blank"><img src="images/pinterest.png" alt="Pinterest"></a>
-               </div>
-
-            </div>
-            <p>© TODOS LOS DERECHOS RESERVADOS 2017</p>
-
-          </footer>
+        <?php include('footer.php') ?>
   </body>
 </html>

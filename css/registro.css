@@ -11,12 +11,19 @@
   height: 700px;
 }
 /*------------------- FORMULARIO DE REGISTRO ------------*/
+
+/* NOTE: REGISTRACION PHP */
+#errorNombre, #errorApellido, #errorEmail, #errorPass{
+   border: 1px solid red;
+}
+
+
 .formulario {
   width: 50%;
   background-color: white;
   padding-top: 20px;
   border-radius: 4px;
-  height: 450px;
+  height: 580px;
 }
 .formulario h1 {
   text-align: center;
@@ -67,7 +74,7 @@
 }
 div.aceptar {
   margin: 20px 0;
-  display: flex;
+  display: block;
 
 }
 .aceptar .izquierda {

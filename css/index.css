@@ -163,13 +163,7 @@
       right: 116px;
       top: 5px;
    }
-   div.redes-sociales {
-     float: right;
-     position: relative;
-     right: 2%;
-     bottom: 26px;
-     top: 1%;
-   }
+
    .medios-pagos img {
      width: 60px;
      height: 52px;
@@ -191,83 +185,6 @@
    }
 
 
-
-
-/*-------------- NOTE: footer ------------*/
-
-
-
-   footer{
-      width: 100%;
-      overflow: hidden;
-      background-color: #484848;
-   }
-
-   footer img{
-      float: left;
-      position: relative;
-      left: 2%;
-      top: 25px;
-      width: 81px;
-   }
-   .pie{
-      width: 100%;
-      height: 150px;
-      background-color: #484848;
-      overflow: hidden;
-   }
-
-
-   div.pie ul{
-      float: left;
-      list-style: none;
-      position: relative;
-      top: 31px;
-      margin-left: 4%;
-   }
-
-   div.pie ul li a{
-      margin: 5px;
-      /*color: #B9A88E;*/
-      color: rgb(147, 147, 147);
-      text-decoration: none;
-      transition: 0.6s;
-      font-size: 15px;
-   }
-   div.pie ul li a:hover{
-      color: #B9A88E;
-      /*color: rgb(147, 147, 147);*/
-   }
-
-   div.redes-sociales{
-      float: right;
-      position: relative;
-      right: 2%;
-   }
-
-   div.redes-sociales a img{
-      width: 35px;
-      height: 35px;
-      margin: 3px;
-      float: right;
-      filter: grayscale(100%);
-   }
-
-   div.redes-sociales a img:hover{
-      filter: none;
-      transition: all 0.7s ease;
-   }
-   footer p{
-      background-color: #484848;
-      text-align: center;
-      font-size: 15px;
-      color: rgb(147, 147, 147);
-      position: relative;
-      bottom: 20px;
-   }
-
-/*------------ : Footer -----------*/
-
 /* NOTE: Responsive Tablets */
 
 @media (max-width:960px) and (min-width:461px){
@@ -281,7 +198,7 @@
      height: 400px;
      background-size: 100% 80%;
      background-repeat: no-repeat;
-     background-position-y: 45px;
+     background-position-y: 60px;
    }
    div.banner-cel img{
       display: none;
@@ -327,13 +244,7 @@
       right: 160px;
       top: 5px;
    }
-   div.redes-sociales {
-     float: right;
-     position: relative;
-     right: 166px;
-     bottom: 26px;
-     display: none;
-   }
+
    .medios-pagos img {
      width: 60px;
      height: 52px;
@@ -354,11 +265,6 @@
      width: 100px;
   }
    /* NOTE: Footer tablet */
-   footer img.data-fiscal {
-      position: relative;
-      top: 10px;
-      left: 10px;
-   }
 
    div.pie ul {
      float: left;
@@ -373,9 +279,7 @@
      right: 166px;
      bottom: 26px;
    }
-   .pie p{
 
-   }
 
 }
 
@@ -401,7 +305,7 @@
      height: 400px;
      background-size: 100% 80%;
      background-repeat: no-repeat;
-     background-position-y: 45px;
+     background-position-y: 60px;
    }
    div.banner-cel img{
      width: 15%;
@@ -467,13 +371,7 @@
       right: 160px;
       top: 5px;
    }
-   div.redes-sociales {
-     float: right;
-     position: relative;
-     right: 166px;
-     bottom: 26px;
-     display: none;
-   }
+
    .medios-pagos img {
      width: 60px;
      height: 52px;
@@ -494,20 +392,7 @@
      width: 100px;
   }
 
-   /* NOTE: Footer mobile*/
 
-   footer p{
-      bottom: 2px;
-   }
-   footer img{
-      top: 10px;
-   }
-   div.pie ul{
-      padding: 3px;
-      margin-left: 3px;
-      top: 5px;
-
-   }
 
 
 }/* fin mobile*/
