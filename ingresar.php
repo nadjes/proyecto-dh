@@ -39,7 +39,7 @@ if (isset($_SESSION['nombre'])){
 
     //Guarda cookie y redirecciona
     else if (isset ($_POST['recordarme'])){
-      setcookie('nombre', $_POST['nombre'], time()+ 3600 * 24 * 7); // cambie 'email' por 'nombre'
+      setcookie('email', $_POST['email'], time()+ 3600 * 24 * 7); // cambie 'email' por 'nombre'
       $_SESSION['nombre']= verificarUsuario($_POST['email'], $_POST['password']);
       header ("location: index.php"); // cambie el Location, antes binevenido.php, ahora index.php
    } else {

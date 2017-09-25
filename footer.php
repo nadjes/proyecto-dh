@@ -20,7 +20,7 @@ no se por que nos e ven los iconos, pero cre que se puede arreglar, cuando el ar
 <!--
 Se desorganizo el footer cuando lo pase a .php, preguntar por que puede ser
 - se podria poner un newsletter
-- 
+-
 -->
 <footer>
    <div class="footer-wrapper">
@@ -40,7 +40,7 @@ Se desorganizo el footer cuando lo pase a .php, preguntar por que puede ser
             <span><h3>AYUDA</h3></span>
             <ul>
                <li><a href="#">Soporte</a></li>
-               <li><a href="#">Acerca de Nosotros</a></li>
+               <li><a href="nosotros.php">Acerca de Nosotros</a></li>
                <li><a href="#">Contacto</a></li>
                <li><a href="#">Otro Item</a></li>
             </ul>
