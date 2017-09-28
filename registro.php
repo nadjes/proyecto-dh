@@ -22,6 +22,7 @@ if (isset($_POST['btn-crearcuenta'])){
    $usuario = $_POST['usuario'];
 
 
+
    //var_dump($terminos);
 
    $_POST = limpiarDatos ($_POST);
@@ -32,6 +33,8 @@ if (isset($_POST['btn-crearcuenta'])){
 
       if(count($errores) ==0){
          $_POST['id'] = buscarUltimoId()+1;
+         //var_dump($_POST);
+         //die();
          $usuario =  prepararRegistro($_POST);
          $usuarioJson = json_encode($usuario);
          file_put_contents('usuarios.json', $usuarioJson."\n", FILE_APPEND);
@@ -137,9 +140,10 @@ if (isset($_POST['btn-crearcuenta'])){
              }
              ?>
           </span>
+
           <h3>Imagen de perfil</h3>
           <input type="file" name="avatar" value="">
-          
+
           <div class="aceptar">
             <div class="izquierda">
               <input name="terminos" type="checkbox" id="terminos" value="1" required>

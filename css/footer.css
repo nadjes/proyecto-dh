@@ -73,8 +73,8 @@ div.cabecera img.logo{
 }
 
 div.links-terminos {
-   text-align: center;
-
+  text-align: center;
+  width: 50%;
 }
 
 div.links-terminos a {

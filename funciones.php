@@ -35,9 +35,9 @@ function validarDatos($data){
      $errores['confirmar-pass'] = "Las contraseñas no coinciden";
   }
   if(!empty($_FILES['avatar']['name'])){
-     $ruta = __DIR__.'/img/';
+     $ruta = dirname(__FILE__).'/img/';
      crearDirectorio($ruta);
-     $archivo = guardarImagen($ruta, 'avatar', $_FILES['avatar']['name'] );
+     $_POST['avatar'] = guardarImagen($ruta, 'avatar', md5($_FILES['avatar']['name']).time());
   }elseif (isset($archivo['error'])) {
      $errores['avatar'] = $archivo['error'];
   }
@@ -60,10 +60,23 @@ function buscarPorEmail($email){
   return false;
 }
 
+function guardarImagen($ruta, $input, $nombreDeseado){
+   if($_FILES[$input]['error'] == UPLOAD_ERR_OK){
 
-function abrirArchivo($nombre)
-{
+      $nombre = $_FILES[$input]["name"];
+      $archivo = $_FILES[$input]["tmp_name"];
+      $ext = pathinfo($nombre, PATHINFO_EXTENSION);
+      $miArchivo = $ruta;
+      $miArchivo = $miArchivo.$nombreDeseado;
 
+
+      move_uploaded_file($archivo, $miArchivo);
+      return ['ruta' => $nombreDeseado.'.'.$ext];
+   }
+   return ['error' => $_FILES[$input]['error']];
+}
+
+function abrirArchivo($nombre){
   if(!empty($nombre)){
     if(file_exists($nombre)){
       $recurso = fopen($nombre, 'r+');
@@ -84,7 +97,6 @@ function prepararRegistro($datos){
      'avatar' => $datos['avatar'],
      'id' => $datos['id']
   ];
-
 }
 
 function limpiarDatos($datos){
@@ -124,6 +136,12 @@ function buscarPorUsuario($usuario){
 }
 
 
+function crearDirectorio($ruta){
+    if(!file_exists($ruta)){
+      mkdir($ruta, 0777);
+    }
+}
+
 function iniciarSession($datos)
 {
   $_SESSION['nombre']=$datos;
@@ -152,17 +170,4 @@ function enviarEmailBienvenida($data){
 
    mail($destinatario, $tema, $mensaje, $encabezado);
 }
-
-//Verifica si el usuario existe y si es así devuelve el nombre.
-  function verificarUsuario($email, $password) {
-    $puntero= fopen ('usuarios.json', 'r');
-    while ($linea= fgets($puntero)){
-      $arrayJson= json_decode($linea, true);
-      if ($arrayJson["email"]== $email && password_verify($password, $arrayJson["password"]) || $arrayJson["usuario"]== $email && password_verify($password, $arrayJson["password"])){ //En el 2do valor va el Pas HASH
-        return $arrayJson;
-      }
-    }
-    return $arrayJson;
-  }
-
 ?>
