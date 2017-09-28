@@ -75,7 +75,7 @@ nav li a:hover {
   position: fixed;
   z-index: 100;
   background-color: rgba(34,54,63,0.6);
-  top: 35px;
+  top: 37px;
   right: 0;
   width: 21%;
   display: none;
@@ -150,7 +150,15 @@ nav li a:hover {
   flex-direction: column;
 }
 .opciones a{
-  width: 100%;
+  width: 80%;
+  padding: 17px;
+  color: white;
+}
+.opciones a:nth-child(-n+3){
+  width: 70%;
+  padding: 17px;
+  border-bottom: 1px solid white;
+  color: white;
 }
 
 #menu {
