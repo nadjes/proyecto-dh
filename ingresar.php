@@ -1,6 +1,6 @@
 <?php
 //session_name("COOKIE LEO");
-//session_start();
+session_start();
 
 if (isset($_SESSION['nombre'])){
   header('location: index.php');

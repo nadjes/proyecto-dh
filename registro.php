@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if (isset($_SESSION['nombre'])){
+  header ("location: index.php");
+}
+
  require_once('funciones.php');
 
 $nombre = "";
@@ -69,6 +75,7 @@ if (isset($_POST['btn-crearcuenta'])){
       <section class="formulario">
         <h1>Complete los siguientes datos para crearse una cuenta.</h1>
         <form class="registro" action="registro.php" method="post">
+          <input type="text" name="usuario" value="" placeholder="Usuario">
           <div class="arriba">
 
              <?php

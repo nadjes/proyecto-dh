@@ -1,3 +1,5 @@
+<?php
+session_start() ?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -31,7 +33,7 @@
           <img src="images/nieve.png" alt="">
           <p>Liquidación de INVIERNO</p>
         </div>
-
+        <?php var_dump($_SESSION) ?>
 
            </div>
             <div class="secciones">
@@ -84,14 +86,14 @@
                 </div>
 
               </section>
-              <section class="medios-pagos">
+              <!--<section class="medios-pagos">
                  <div class="img-pagos">
                     <img src="images/mercadopago.png" alt="Mercado Pago" id="mercadopago">
                     <img src="images/paypal.png" alt="Paypal">
                     <img src="images/mastercard.png" alt="Mastercard">
                     <img src="images/visa.png" alt="Visa">
                  </div>
-              </section>
+              </section> -->
 
            </div>
                                     <!-- NOTE: FOOTER  -->

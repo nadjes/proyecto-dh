@@ -1,4 +1,3 @@
-
 <header>
   <div class="izquierda">
     <div class="img-logo">
@@ -33,32 +32,43 @@
           <a href="index.php">Home</a>
         </li>
         <li>
-          <a href="registro.php">Registrarse</a>
-        </li>
-        <li>
-          <a href="ingresar.php" id="hover">Ingresar</a>
-          <div class="ingreso">
-           <form class="" action="ingresar.php" method="post">
-              <div class="ingreso-arriba-arriba">
-                <label for="usuario">Usuario</label>
-                <input type="email" name="email" value="" id="usuario" placeholder="E-mail">
-                <label for="pass">Contraseña</label>
-                <input type="password" name="email" value="" id="pass" placeholder="Contraseña">
-              </div>
-           <div class="ingreso-arriba">
-               <input type="checkbox" name="" value="" id="recordarme">
-               <label for="recordarme">Recordame</label>
-           </div>
-           <div class="ingreso-abajo">
-               <input type="submit" name="" value="Iniciar sesión">
-                <a href="#">Olvide mi contraseña</a>
-           </div>
-         </form>
-         </div>
-        </li>
-        <li>
           <a href="faqs.php">FAQ</a>
         </li>
+        <li>
+          <a href="registro.php"><?php isset($_SESSION['nombre']) ? "" : 'Registrarse' ?></a>
+        </li>
+        <li>
+          <a href="ingresar.php" id="hover"><?php echo isset($_SESSION["nombre"]) ? strtoupper($_SESSION["nombre"]) : 'Ingresar' ?></a>
+          <div class="ingreso">
+            <?php if (isset($_SESSION['nombre'])){
+              echo '<div class="opciones">
+                <a>Mis datos</a>
+                <a>Compras</a>
+                <a>Favoritos</a>
+                <a>Cerrar sesión</a>
+              </div>';
+              } else {
+              echo '<form class="" action="ingresar.php" method="post">
+                 <div class="ingreso-arriba-arriba">
+                   <label for="usuario">Usuario</label>
+                   <input type="email" name="email" value="" id="usuario" placeholder="E-mail">
+                   <label for="pass">Contraseña</label>
+                   <input type="password" name="email" value="" id="pass" placeholder="Contraseña">
+                 </div>
+              <div class="ingreso-arriba">
+                  <input type="checkbox" name="" value="" id="recordarme">
+                  <label for="recordarme">Recordame</label>
+              </div>
+              <div class="ingreso-abajo">
+                  <input type="submit" name="" value="Iniciar sesión">
+                   <a href="#">Olvide mi contraseña</a>
+              </div>
+            </form>';
+            } ?>
+
+         </div>
+        </li>
+
       </ul>
     </nav>
   </div>
