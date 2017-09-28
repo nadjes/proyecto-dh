@@ -6,17 +6,8 @@ if (isset($_SESSION['nombre'])){
   header('location: index.php');
 }
 
-//Verifica si el usuario existe y si es así devuelve el nombre.
-  function verificarUsuario($email, $password) {
-    $puntero= fopen ('usuarios.json', 'r');
-    while ($linea= fgets($puntero)){
-      $arrayJson= json_decode($linea, true);
-      if ($arrayJson["email"]== $email && password_verify($password, $arrayJson["password"]) || $arrayJson["usuario"]== $email && password_verify($password, $arrayJson["password"])){ //En el 2do valor va el Pas HASH
-        return $arrayJson;
-      }
-    }
-    return $arrayJson;
-  }
+require_once("funciones.php");
+
 
   if ($_POST) {
 
@@ -74,17 +65,11 @@ if (isset($_SESSION['nombre'])){
         <section class="formulario">
           <h1>Iniciar sesión</h1>
           <span>
-             <?php
-             if(isset($_SESSION)){
-             var_dump($_SESSION);
-          }else{
-             echo "";
-          }
-             ?>
+
           </span>
           <form class="sesion" action="ingresar.php" method="post">
             <div class="datos">
-              <label for="email">Email :</label>
+              <label for="email">Email o usuario :</label>
               <input type="text" name="email" id="email" placeholder="E-mail" value="<?php
                 if(isset($_COOKIE['email'])) {
                   echo $_COOKIE['email'];

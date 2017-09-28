@@ -1,3 +1,39 @@
+<?php
+
+require_once("funciones.php");
+
+  if ($_POST) {
+
+    //VALIDACION Email
+    if (!isset($_POST['email'])){
+      $error['email']= "Completar con el email";
+    } else if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+      $error['email']= "El email no es válido";
+    } else if ($_POST['email']){
+      $email= $_POST['email'];
+    }
+    //VALIDACION Contraseña
+    if (empty($_POST['password'])) {
+      $error['password']= "Ingresa tu contraseña";
+    }
+    //VERIFICA existencia de usuario
+    else if (!verificarUsuario($_POST['email'], $_POST['password'])){
+      $error['password']= "La contraseña no coincide con el email. Si nunca te registraste, hacelo <a href='registro.php'>aquí</a>.";
+    }
+
+    //Guarda cookie y redirecciona
+    else if (isset ($_POST['recordarme'])){
+      setcookie('email', $_POST['email'], time()+ 3600 * 24 * 7); // cambie 'email' por 'nombre'
+      $_SESSION = verificarUsuario($_POST['email'], $_POST['password']);
+      header ("location: index.php"); // cambie el Location, antes binevenido.php, ahora index.php
+   } else {
+      $_SESSION = verificarUsuario($_POST['email'], $_POST['password']);
+      header ("location: index.php");
+    }
+  }
+
+ // CIERRA EL PHP ?>
+
 <header>
   <div class="izquierda">
     <div class="img-logo">
@@ -45,13 +81,13 @@
                 <a>Mis datos</a>
                 <a>Compras</a>
                 <a>Favoritos</a>
-                <a>Cerrar sesión</a>
+                <a href="cerrarsesion.php">Cerrar sesión</a>
               </div>';
               } else {
               echo '<form class="" action="ingresar.php" method="post">
                  <div class="ingreso-arriba-arriba">
                    <label for="usuario">Usuario</label>
-                   <input type="email" name="email" value="" id="usuario" placeholder="E-mail">
+                   <input type="text" name="email" value="" id="usuario" placeholder="E-mail">
                    <label for="pass">Contraseña</label>
                    <input type="password" name="password" value="" id="pass" placeholder="Contraseña">
                  </div>
