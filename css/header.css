@@ -175,6 +175,7 @@ nav li a:hover {
     width: 80%;
   }
   .derecha {
+    justify-content: center;
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -259,6 +260,7 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     width: 40%;
+    justify-content: center;
   }
   .derecha label {
     font-size: 30px;

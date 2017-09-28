@@ -35,10 +35,10 @@
           <a href="faqs.php">FAQ</a>
         </li>
         <li>
-          <a href="registro.php"><?php isset($_SESSION['nombre']) ? "" : 'Registrarse' ?></a>
+          <a href="registro.php"><?php echo isset($_SESSION['nombre']) ? "" : 'Registrarse' ?></a>
         </li>
         <li>
-          <a href="ingresar.php" id="hover"><?php echo isset($_SESSION["nombre"]) ? strtoupper($_SESSION["nombre"]) : 'Ingresar' ?></a>
+          <a href="ingresar.php" id="hover"><?php echo isset($_SESSION["usuario"]) ? strtoupper($_SESSION["usuario"]) : 'Ingresar' ?></a>
           <div class="ingreso">
             <?php if (isset($_SESSION['nombre'])){
               echo '<div class="opciones">
@@ -53,14 +53,14 @@
                    <label for="usuario">Usuario</label>
                    <input type="email" name="email" value="" id="usuario" placeholder="E-mail">
                    <label for="pass">Contraseña</label>
-                   <input type="password" name="email" value="" id="pass" placeholder="Contraseña">
+                   <input type="password" name="password" value="" id="pass" placeholder="Contraseña">
                  </div>
               <div class="ingreso-arriba">
-                  <input type="checkbox" name="" value="" id="recordarme">
+                  <input type="checkbox" name="recordarme" value="" id="recordarme">
                   <label for="recordarme">Recordame</label>
               </div>
               <div class="ingreso-abajo">
-                  <input type="submit" name="" value="Iniciar sesión">
+                  <input type="submit" name="btn-session" value="Iniciar sesión">
                    <a href="#">Olvide mi contraseña</a>
               </div>
             </form>';

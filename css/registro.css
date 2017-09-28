@@ -8,7 +8,7 @@
   background-color: #f5f5f5;
   padding-top: 50px;
   display: flex;
-  height: 700px;
+  padding-bottom: 30px;
 }
 /*------------------- FORMULARIO DE REGISTRO ------------*/
 
@@ -241,8 +241,9 @@ footer p{
 @media (max-width:960px) and (min-width:461px){
 
    .contenedor{
-     display: block;
-     height: auto;
+     flex-direction: column;
+
+
    }
    /* NOTE: body tablet */
    .formulario {
@@ -363,20 +364,19 @@ footer p{
    .medios-pagos #mercadopago{
      width: 100px;
   }
-
-   /* NOTE: Footer mobile*/
-
-   footer p{
-      bottom: 2px;
+   .registro .arriba {
+      flex-wrap: wrap;
    }
-   footer img{
-      top: 10px;
+   .registro .arriba input{
+      width: 100%;
    }
-   div.pie ul{
-      padding: 3px;
-      margin-left: 3px;
-      top: 5px;
-
+   .registro .abajo {
+      flex-wrap: wrap;
    }
-
+   .registro .abajo input {
+      width: 100%;
+   }
+   .registro input {
+      width: 72%;
+   }
 }

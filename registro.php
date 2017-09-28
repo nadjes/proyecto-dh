@@ -10,6 +10,8 @@ if (isset($_SESSION['nombre'])){
 $nombre = "";
 $apellido = "";
 $email = "";
+$usuario = "";
+$avatar = "";
 
 
 if (isset($_POST['btn-crearcuenta'])){
@@ -17,6 +19,8 @@ if (isset($_POST['btn-crearcuenta'])){
    $nombre = $_POST['nombre'];
    $apellido = $_POST['apellido'];
    $email = $_POST['email'];
+   $usuario = $_POST['usuario'];
+
 
    //var_dump($terminos);
 
@@ -74,7 +78,7 @@ if (isset($_POST['btn-crearcuenta'])){
     <div class="contenedor">
       <section class="formulario">
         <h1>Complete los siguientes datos para crearse una cuenta.</h1>
-        <form class="registro" action="registro.php" method="post">
+        <form class="registro" action="registro.php" method="post" enctype="multipart/form-data">
           <input type="text" name="usuario" value="" placeholder="Usuario">
           <div class="arriba">
 
@@ -133,7 +137,9 @@ if (isset($_POST['btn-crearcuenta'])){
              }
              ?>
           </span>
-
+          <h3>Imagen de perfil</h3>
+          <input type="file" name="avatar" value="">
+          
           <div class="aceptar">
             <div class="izquierda">
               <input name="terminos" type="checkbox" id="terminos" value="1" required>
@@ -144,6 +150,7 @@ if (isset($_POST['btn-crearcuenta'])){
               <a href="ingresar.php">¿Ya tienes una cuenta?</a>
             </div>
           </div>
+
         </form>
       </section>
       <div class="ingresar">

@@ -1,5 +1,5 @@
 <?php
-//session_name("COOKIE LEO");
+
 session_start();
 
 if (isset($_SESSION['nombre'])){
@@ -11,11 +11,11 @@ if (isset($_SESSION['nombre'])){
     $puntero= fopen ('usuarios.json', 'r');
     while ($linea= fgets($puntero)){
       $arrayJson= json_decode($linea, true);
-      if ($arrayJson["email"]== $email && password_verify($password, $arrayJson["password"])){ //En el 2do valor va el Pas HASH
-        return $arrayJson["nombre"];
+      if ($arrayJson["email"]== $email && password_verify($password, $arrayJson["password"]) || $arrayJson["usuario"]== $email && password_verify($password, $arrayJson["password"])){ //En el 2do valor va el Pas HASH
+        return $arrayJson;
       }
     }
-    return $arrayJson= "";
+    return $arrayJson;
   }
 
   if ($_POST) {
@@ -40,10 +40,10 @@ if (isset($_SESSION['nombre'])){
     //Guarda cookie y redirecciona
     else if (isset ($_POST['recordarme'])){
       setcookie('email', $_POST['email'], time()+ 3600 * 24 * 7); // cambie 'email' por 'nombre'
-      $_SESSION['nombre']= verificarUsuario($_POST['email'], $_POST['password']);
+      $_SESSION = verificarUsuario($_POST['email'], $_POST['password']);
       header ("location: index.php"); // cambie el Location, antes binevenido.php, ahora index.php
    } else {
-      $_SESSION['nombre']= verificarUsuario($_POST['email'], $_POST['password']);
+      $_SESSION = verificarUsuario($_POST['email'], $_POST['password']);
       header ("location: index.php");
     }
   }

@@ -18,6 +18,15 @@ function validarDatos($data){
   if( buscarPorEmail($data['email']) ){
           $errores['email'] = "El Email ya está Registrado <br><br>Por favor <a href='ingresar.php'>INICIA SESION</a>";
   }
+  if(empty($data['usuario'])){
+     $errores['usuario'] = NULL;
+     if(is_null($errores['usuario'])){
+        $errores['usuario'] = "Elije un nombre de usuario";
+     }
+ }
+  if(buscarPorUsuario($data['usuario'])){
+     $errores['usuario'] = "Ese Alias ya fue tomado, por favor ingresa otro";
+ }
 
   if(strlen($data['password']) < 6){
      $errores['password'] = "La contraseña debe tener 6 digitos";
@@ -25,10 +34,13 @@ function validarDatos($data){
   if($data['confirmar-pass'] !=$data['password']){
      $errores['confirmar-pass'] = "Las contraseñas no coinciden";
   }
-     // Verificar primero que todos los campos esten llenos, despues ver si el email ya esta ingresado
-     // lo que quiero es que solo me avise de que el email fue ingresado si los demas campos estan llenos.
-     // si no estan llenos, me tirara los errores correspondientes de los campos  vacios
-
+  if(!empty($_FILES['avatar']['name'])){
+     $ruta = __DIR__.'/img/';
+     crearDirectorio($ruta);
+     $archivo = guardarImagen($ruta, 'avatar', $_FILES['avatar']['name'] );
+  }elseif (isset($archivo['error'])) {
+     $errores['avatar'] = $archivo['error'];
+  }
 
   return $errores;
 
@@ -68,6 +80,8 @@ function prepararRegistro($datos){
      'apellido' => $datos['apellido'],
      'email' => $datos['email'],
      'password' => password_hash($datos['password'], PASSWORD_DEFAULT),
+     'usuario' => $datos['usuario'],
+     'avatar' => $datos['avatar'],
      'id' => $datos['id']
   ];
 
@@ -94,6 +108,22 @@ function buscarUltimoId(){
    return $id;
 }
 
+function buscarPorUsuario($usuario){
+   //busca en el json si el alias ya fue ingresado
+
+  $recurso = abrirArchivo('usuarios.json');
+  while( $linea = fgets($recurso)){
+    $decode = json_decode($linea, true);
+    if(isset($decode['usuario'])){
+      if($decode['usuario'] == $usuario){
+         return $decode;
+      }
+    }
+  }
+  return false;
+}
+
+
 function iniciarSession($datos)
 {
   $_SESSION['nombre']=$datos;
@@ -111,7 +141,7 @@ function enviarEmailBienvenida($data){
       Tengo que llenar el encabezado con otros datos importantes como:
          los caracteres raros
          ver como enviar una plantilla html (foto, logo, descripcion, agradecimiento)
-         
+
    */
    $destinatario = $data['email'];
    $usuario = $data['nombre'];
