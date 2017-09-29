@@ -1,0 +1,21 @@
+*{
+  box-sizing: border-box;
+  /*font-family: 'Ubuntu', serif;*/
+  margin: 0 auto;
+}
+
+body{
+  background-color: #f5f5f5;
+  color: #484848;
+}
+
+section {
+  width: 90%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section input {
+  margin-bottom: 15px;
+}
