@@ -78,7 +78,7 @@ require_once("funciones.php");
           <div class="ingreso">
             <?php if (isset($_SESSION['nombre'])){
               echo '<div class="opciones">
-                <a>Mis datos</a>
+                <a href="misdatos.php">Mis datos</a>
                 <a>Compras</a>
                 <a>Favoritos</a>
                 <a href="cerrarsesion.php">Cerrar sesión</a>
