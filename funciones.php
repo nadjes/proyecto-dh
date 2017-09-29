@@ -147,6 +147,18 @@ function iniciarSession($datos)
   $_SESSION['nombre']=$datos;
 }
 
+//Verifica si el usuario existe y si es así devuelve el nombre.
+   function verificarUsuario($email, $password) {
+    $puntero= fopen ('usuarios.json', 'r');
+    while ($linea= fgets($puntero)){
+      $arrayJson= json_decode($linea, true);
+      if ($arrayJson["email"]== $email && password_verify($password, $arrayJson["password"]) || $arrayJson["usuario"]== $email && password_verify($password, $arrayJson["password"])){ //En el 2do valor va el Pas HASH
+        return $arrayJson;
+      }
+    }
+    return $arrayJson;
+  }
+
 
 
 
